@@ -60,6 +60,23 @@
  .switchover:hover{
      background-position: 0 0;
  }
+ .switchoverr{
+     width: 41px;
+     height: 69px;
+     /*background:red;*/
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     margin: auto 0;
+     z-index: 100;
+     background-image: url("../img/images/icon-slides.png");
+     background-position: 41px 0;
+
+ }
+ .switchoverr:hover{
+     background-position: 124px 0;
+ }
 
 .banner-img li a img{
     display:block;
@@ -193,6 +210,20 @@ right: 0;
     float: right;
 
     margin-top: 25px;
+}
+.search input{
+    display: block;
+    width: 245px;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+}
+  .search .iconfont icon-sousuo{
+    width: 52px;
+    height: 50px;
+    display: block;
+    float: right;
 }
 ul li{
     list-style: none;
@@ -398,12 +429,12 @@ ul li{
 .iphone-middle{
   width: 1226px;
     height: 614px;
-    background: yellow;
+    /*background: yellow;*/
 }
 .xiaomimax3{
     width: 234px;
     height: 614px;
-    background: blue;
+    /*background: blue;*/
     float: left;
 }
 .xiaomimax3 img{
@@ -417,23 +448,61 @@ ul li{
     width: 234px;
     height: 199px;
 }
+ .rem{
+     height: 12px;
+     font-weight: normal;
+     margin-left: 94px;
+     color: #333333;
+
+
+
+ }
+ .AI{
+     display: block;
+     margin-top: 9px;
+     font-size: 11px;
+     color: #b0b0b0;
+     text-align: center;
+
+ }
+ .AIp{
+     display: block;
+     color: #ff6700;
+     font-size: 10px;
+     margin-top: 20px;
+     text-align: center;
+ }
 .iphone-middler{
     width: 978px;
     height:614px ;
-    background: palegreen;
+    /*background: palegreen;*/
     float: right;
 }
 .iphone-middler ul li{
     width: 234px;
     height: 300px;
-    background: palevioletred;
+    /*background: palevioletred;*/
     float: left;
     margin-right: 14px;
 
 }
-.iphone-middler div:nth-child(4n){
+
+
+.iphone-middler ul li:nth-child(4n){
     margin-right: 0;
 }
+ .iphone-middler ul li:nth-child(5){
+      margin-top:14px;
+  }
+ .iphone-middler ul li:nth-child(6){
+     margin-top:14px;
+ }
+ .iphone-middler ul li:nth-child(7){
+      margin-top:14px;
+  }
+ .iphone-middler ul li:nth-child(8){
+       margin-top:14px;
+   }
 .pic{
     margin-top: 0;
 }
