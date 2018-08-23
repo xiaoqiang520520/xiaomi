@@ -79,7 +79,7 @@
     bottom: 0;
     left: 234px;
     margin: auto 0;
-    z-index: 100;
+    z-index:100 ;
     background-image: url("../img/images/icon-slides.png");
     background-position: -83px 0;
 
@@ -104,11 +104,18 @@
  .switchoverr:hover{
      background-position: 124px 0;
  }
+ .banner-img li{
+     width: 1226px;
+     height: 460px;
+     position: absolute;
+     top:0;
+     left:0;
 
+ }
 .banner-img li a img{
     display:block;
     width: 100%;
-    position: absolute;
+
 
 }
 .banner-img{
@@ -122,6 +129,7 @@
     background: rgba(0,0,0,0.6);
     top: 0;
     left: 0;
+    z-index: 100;
 
 
 }
@@ -140,6 +148,17 @@
     line-height: 42px;
     margin-left: 30px;
 }
+.hidden{
+    width:992px;
+    height:0px;
+    background:red;
+    position:absolute;
+    top:0;
+    left:234px;
+    overflow: hidden;
+    z-index: 100;
+
+}
 .navigation-character{
     float: left;
 }
@@ -151,6 +170,7 @@
     position: absolute;
 right: 0;
     bottom: 0;
+    z-index: 100;
 }
 .round-frame{
     border-radius: 50%;
@@ -163,10 +183,19 @@ right: 0;
    margin-top: 25px;
 
 }
-.Round-frame div:last-child{
+ .round-frame:hover{
+     background: #fff;
+ }
+ .Round-frame div:first-child{
+     background: #fff;
+
+ }
+
+ .Round-frame div:last-child{
     margin-right: 0;
-    background: #ffffff;
+    /*background: #ffffff;*/
 }
+
 .sign{
     display: block;
     float: right;
@@ -197,7 +226,9 @@ right: 0;
     width: 120px;
     float: right;
     background: #424242;
+    position: relative;
 }
+
  .icon-gouwuchekong{
      display: block;
      font-size: 14px;
@@ -214,6 +245,17 @@ right: 0;
 .list:hover{
     color: white;
 }
+ .hidbox{
+     width:316px;
+     /*height:100px;*/
+     height:0;
+     background:red;
+     position:absolute;
+     top:40px;
+     right:0px;
+     overflow: hidden;
+     /*font-size: 6px;*/
+ }
 .rectangle{
     width: 1226px;
     height: 100px;
@@ -769,6 +811,7 @@ background: #5f5750 ;
      width: 1226px;
      height: 626px;
      /*background: #00a0c1;*/
+     position: relative;
  }
  .appliance-middle-l{
      width: 234px;
@@ -796,8 +839,12 @@ background: #5f5750 ;
 .appliance-middle-r{
     width: 969px;
     height: 626px;
-    /*background: #c1d6fa;*/
+    background: #c1d6fa;
     float: right;
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: 5;
 }
 .appliance-middle-r li{
     width: 234px;
