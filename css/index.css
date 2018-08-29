@@ -150,16 +150,33 @@
 }
 .hidden{
     width:992px;
-    height:0px;
+    height:0;
     background:red;
     position:absolute;
     top:0;
     left:234px;
     overflow: hidden;
     z-index: 100;
+    /*border: 1px solid #b1adad;*/
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+
 
 }
-.navigation-character{
+ .hidden ul{
+     width:992px;
+     height: 100%;
+
+ }
+ .hidden ul li{
+     width:320px;
+     height:260px;
+     background: #83c44e;
+ }
+
+
+ .navigation-character{
     float: left;
 }
 .Round-frame{
@@ -216,6 +233,7 @@ right: 0;
     height: 100%;
     width: 300px;
     float: right;
+    /*overflow: hidden;*/
 
 }
 .headrl{
@@ -227,6 +245,7 @@ right: 0;
     float: right;
     background: #424242;
     position: relative;
+    /*overflow: hidden;*/
 }
 
  .icon-gouwuchekong{
@@ -249,12 +268,17 @@ right: 0;
      width:316px;
      /*height:100px;*/
      height:0;
-     background:red;
+     background:#fff;
      position:absolute;
      top:40px;
      right:0px;
      overflow: hidden;
      /*font-size: 6px;*/
+     font-size: 11px;
+     text-align: center;
+     line-height: 100px;
+     transition: all .2s linear;
+     /*box-shadow: 0 5px 5px 5px rgba(175,175,175,0.5);*/
  }
 .rectangle{
     width: 1226px;
@@ -495,6 +519,7 @@ background: #5f5750 ;
 
  }
  .backgr{
+     /*width: 100%;*/
      background: #f5f5f5;
  }
 .flash-purchase div:last-child{
@@ -1170,7 +1195,7 @@ text-align: center;
  .content{
      width: 1226px;
      height: 460px;
-     /*background: deeppink;*/
+     background:#f5f5f5;
      margin-top: 40px;
 
  }
@@ -1193,6 +1218,14 @@ text-align: center;
      height: 420px;
      /*background: brown;*/
      overflow: hidden;
+
+ }
+
+ .contentm ul{
+     width: 1226px;
+     height: 420px;
+     display: flex;
+     justify-content: space-between;
  }
  .contentm ul li{
       width: 296px;
@@ -1200,8 +1233,30 @@ text-align: center;
      float: left;
      margin-right: 14px;
      transition: all .2s linear;
+     position: relative;
+     overflow: hidden;
+     background: #fff;
 
   }
+ .roll{
+     position: absolute;
+     left:0;
+     top: 90px;
+ }
+ .roll img{
+     display: block;
+     width: 200px;
+     height: 142px;
+ }
+
+ .roll:nth-of-type(2){
+     left:296px;
+
+ }
+ .roll:nth-of-type(3){
+     left:296px;
+
+ }
  .contentm ul li:hover{
      transform: translateY(-5px);
      box-shadow: 0 5px 5px 5px rgba(117,117,117,0.1);
@@ -1220,6 +1275,16 @@ text-align: center;
     text-align: center;
 
 }
+ .roll{
+     width: 296px;
+     height:260px;
+     /*background: #83c44e;*/
+
+ }
+
+
+
+
 .cs1{
 margin-top: 25px;
     display: block;
@@ -1246,33 +1311,82 @@ margin-top: 25px;
     margin: 0 auto;
     margin-top: 14px;
 }
+.turn-l{
+    width: 20px;
+    height: 48px;
+    /*background: blue;*/
+    position: absolute;
+    left: 0;
+    top:190px;
+    line-height: 48px;
+    color: #fff;
+    text-align: center;
+    font-weight: bolder;
+
+}
+ .contentm ul li:hover .turn-l{
+     background:#d9d9d9;
+
+ }
+
+ .turn-r{
+     width: 20px;
+     height: 48px;
+     /*background: blue;*/
+     position: absolute;
+     right: 0;
+     top:190px;
+     line-height: 48px;
+     color: #fff;
+     text-align: center;
+     font-weight: bolder;
+
+
+ }
+ .contentm.turn-r:hover{
+     background: #8d8d8d;
+
+ }
+
+ .contentm ul li:hover .turn-r{
+     background:#d9d9d9;
+
+ }
+ .contentm .turn-r:hover{
+     background:#8d8d8d;
+ }
  .contentb{
      width: 76px;
      height: 10px;
      /*background: #72ff88;*/
-     margin-top: 20px;
-     margin-left: 111px;
+    position: absolute;
+     left:110px;
+     top:390px;
+     display: flex;
+     justify-content: space-between;
+
+
  }
  .concircle{
      width: 6px;
      height: 6px;
      border-radius: 50%;
      background: #b0b0b0;
-     float: left;
+
      /*margin-right: 28px;*/
  }
- .contentb div:first-child{
+ .con1{
      border:2px solid #ff6700;
      background: white;
  }
- .contentb div:nth-child(2){
-     margin-left: 26px;
-     margin-right: 28px;
-     margin-top: 2px;
-     background: #;
+ .concircle:nth-child(2){
+     /*margin-left: 26px;*/
+     /*margin-right: 28px;*/
+     /*margin-top: 2px;*/
+     /*background: #;*/
  }
- .contentb div:last-child{
-     margin-top: 2px;
+ .concircle:last-child{
+     /*margin-top: 2px;*/
   }
  .video{
      width:1226px;
@@ -1332,7 +1446,7 @@ float: left;
      line-height:24px ;
      color: white;
  }
- .icbox:hover{
+  .videomiddle ul li:hover .icbox{
      background: #ffac13;
      border-radius: 12px;
      border: 0px solid;
