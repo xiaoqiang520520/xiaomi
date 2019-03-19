@@ -25,7 +25,7 @@ window.onload=function(){
     console.log(lis, hidden);
     for(let i=0;i<lis.length;i++){
             lis[i].onmouseenter=function () {
-                hidden[i].style.height="460px";
+                // hidden[i].style.height="460px";
 
             }
             lis[i].onmouseleave=function () {
@@ -242,4 +242,35 @@ window.onload=function(){
         }
 
     })
+
+    // 建立rectanglem-xxk
+    let rectangleml=querySelector(".rectanglem-l");
+    let rectanglemxxk=querySelector(".rectanglem-xxk");
+    rectangleml.onmouseenter=function(){
+        rectanglemxxk.style.height="229px";
+    }
+
+
+
+    //结束 建立rectanglem-xxk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

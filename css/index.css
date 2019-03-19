@@ -42,9 +42,53 @@
     width:100%;
     height: 40px;
     background: #333333;
+    position: relative;
 
 
 }
+.headrr:hover{
+    background: #fff;
+
+}
+.headrr:hover i{
+    color: #ff6700;
+
+}
+.headrr:hover span{
+    color: #ff6700;
+
+}
+
+.headrr i{
+    text-align: center;
+    display: block;
+    font-size:18px;
+    float: left;
+    margin-left:30px;
+
+}
+.headrr i span{
+    font-size:12px;
+
+}
+.hidbox{
+    width:316px;
+    /*height:100px;*/
+    height:0;
+    background:#fff;
+    position:absolute;
+    top:40px;
+    right:0;
+    overflow: hidden;
+    /*font-size: 6px;*/
+    font-size: 11px;
+    text-align: center;
+    line-height: 100px;
+    transition: all .2s linear;
+    /* box-shadow: 0 5px 5px 5px rgba(175,175,175,0.5); */
+    z-index: 50;
+}
+
 .list{
     font-size: 12px;
     color: #b0b0b0;
@@ -79,7 +123,7 @@
     bottom: 0;
     left: 234px;
     margin: auto 0;
-    z-index:100 ;
+    z-index:40 ;
     background-image: url("../img/images/icon-slides.png");
     background-position: -83px 0;
 
@@ -96,7 +140,7 @@
      bottom: 0;
      right: 0;
      margin: auto 0;
-     z-index: 100;
+     z-index: 40;
      background-image: url("../img/images/icon-slides.png");
      background-position: 41px 0;
 
@@ -104,23 +148,33 @@
  .switchoverr:hover{
      background-position: 124px 0;
  }
+ .banner-img{
+    width:1226px;
+    height:460px;
+    position: relative;
+}
  .banner-img li{
      width: 1226px;
      height: 460px;
      position: absolute;
      top:0;
      left:0;
+     display: none;
 
  }
+ .banner-img .active1{
+     display: block;
+ }
+ .banner-img li a{
+     display: block;
+     width: 100%;
+     height: 100%;
+ }
 .banner-img li a img{
-    display:block;
+   
     width: 100%;
-
-
 }
-.banner-img{
-    position: relative;
-}
+
 .navigation{
     position: absolute;
     width: 234px;
@@ -129,7 +183,7 @@
     background: rgba(0,0,0,0.6);
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 80;
 
 
 }
@@ -148,6 +202,10 @@
     line-height: 42px;
     margin-left: 30px;
 }
+.navigation li:hover .hidden{
+    height:460px;
+
+}
 .hidden{
     width:992px;
     height:0;
@@ -156,7 +214,7 @@
     top:0;
     left:234px;
     overflow: hidden;
-    z-index: 100;
+    z-index: 80;
     /*border: 1px solid #b1adad;*/
     display: flex;
     justify-content: space-around;
@@ -182,10 +240,8 @@
 .Round-frame{
     width: 90px;
     height: 60px;
-
-
     position: absolute;
-right: 0;
+    right: 0;
     bottom: 0;
     z-index: 100;
 }
@@ -195,19 +251,20 @@ right: 0;
     width: 6px;
     height: 6px;
     background: #92897c;
+    
     border: 2px solid #b3ada4;
     margin-right: 10px;
-   margin-top: 25px;
+    margin-top: 25px;
 
+}
+
+ .hot1{
+    background: #fff;
 }
  .round-frame:hover{
      background: #fff;
  }
- .Round-frame div:first-child{
-     background: #fff;
-
- }
-
+ 
  .Round-frame div:last-child{
     margin-right: 0;
     /*background: #ffffff;*/
@@ -264,22 +321,7 @@ right: 0;
 .list:hover{
     color: white;
 }
- .hidbox{
-     width:316px;
-     /*height:100px;*/
-     height:0;
-     background:#fff;
-     position:absolute;
-     top:40px;
-     right:0px;
-     overflow: hidden;
-     /*font-size: 6px;*/
-     font-size: 11px;
-     text-align: center;
-     line-height: 100px;
-     transition: all .2s linear;
-     /*box-shadow: 0 5px 5px 5px rgba(175,175,175,0.5);*/
- }
+ 
 .rectangle{
     width: 1226px;
     height: 100px;
@@ -301,13 +343,19 @@ right: 0;
     margin-left: 189px;
     /*color: black;*/
 }
+.rectanglem-l{
+    width:513px;
+    height:100px;
+    float: left;
+
+}
 .rectanglem ul li{
     float: left;
-    margin-right: 20px;
+    padding-right: 20px;
     line-height: 100px;
 }
-.rectanglem  ul li:nth-child(10){
-    margin-right: 0;
+.rectanglem .hai{
+    padding-right: 0;
 }
  .rectanglem ul li a {
  color: black;
@@ -316,8 +364,33 @@ right: 0;
      color:#ff6700 ;
 
  }
+.rectanglem-xxk{
+    width:100%;
+    height:0px;
+    background:green;
+   
+    position: absolute;
+    left:0;
+    top:139px;
+    z-index: 50;
+    overflow: hidden;
+}
+.rectanglem-xxk ul li{
+    width:1226px;
+    height:0px;
+    background:red;
+    position: absolute;
+    top:0;
+    left:61px;
+    overflow: hidden;
+}
+.rectanglem-xxk ul li:nth-of-type(2){
+    background:palegoldenrod;
+}
 
-
+.rectanglem-xxk ul li:nth-of-type(3){
+    background:palegreen;
+}
 
 
 
@@ -330,7 +403,11 @@ right: 0;
 
     margin-top: 25px;
     /*font-size: 52px;*/
+    position: relative;
+   
 }
+
+
 .search input{
     display: block;
     width: 245px;
@@ -338,6 +415,8 @@ right: 0;
     padding-left: 10px;
     padding-right: 10px;
     float: left;
+    outline: none;
+    border: 1px solid #e0e0e0;
 }
  .icon-sousuo{
      display: block;
@@ -350,9 +429,20 @@ right: 0;
      text-align: center;
      line-height: 50px;
      border: 1px solid #e0e0e0;
+     border-left:none;
  }
  .icon-sousuo:hover{
      background:#ff6700 ;
+     color:#fff;
+ }
+ .sousuo-bot1{
+     width:243px;
+     height:0px;
+     background:#fff;
+     position: absolute;
+     z-index: 40;
+     left:0;
+     bottom:-300px;
  }
 
 ul li{
@@ -385,9 +475,9 @@ ul li{
  .xgbl ul li a:hover i{
      color:white;
  }
- .xgbl ul li a i:hover spal{
-     color:white;
- }
+ /*.xgbl ul li a i:hover spal{*/
+     /*color:white;*/
+ /*}*/
 /*.bia:hover:ic{*/
    /*color: white;*/
 /*}*/
@@ -475,7 +565,7 @@ background: #5f5750 ;
     /*background: yellow;*/
     float: right;
     text-align: center;
-    line-height: 62px;
+    /*line-height: 62px;*/
     border-top: 1px solid #e0e0e0;
     border-left: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
@@ -636,7 +726,7 @@ background: #5f5750 ;
     height: 672px;
     /*background: black;*/
     margin: 0 auto;
-    margin-top: 21px;
+    /*margin-top: 21px;*/
 }
 .iphone-head{
     width: 1226px;
@@ -789,8 +879,8 @@ background: #5f5750 ;
     width: 1226px;
     height: 686px;
     /*background: brown;*/
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: 20px auto 0;
+    /*margin-top: 20px;*/
 }
 .applicance-head{
     width: 1226px;
@@ -807,7 +897,7 @@ background: #5f5750 ;
  .applicance-headr{
      width: 253px;
      height: 16px;
-     background: white;
+     /*background: white;*/
      position: absolute;
      right: 0;
      bottom: 21px;
@@ -864,7 +954,7 @@ background: #5f5750 ;
 .appliance-middle-r{
     width: 969px;
     height: 626px;
-    background: #c1d6fa;
+    /* background: #c1d6fa; */
     float: right;
     position: absolute;
     top:0;
@@ -1311,11 +1401,11 @@ margin-top: 25px;
     margin: 0 auto;
     margin-top: 14px;
 }
-.turn-l{
+/* .turn-l{
     width: 20px;
     height: 48px;
     /*background: blue;*/
-    position: absolute;
+    /* position: absolute;
     left: 0;
     top:190px;
     line-height: 48px;
@@ -1323,38 +1413,38 @@ margin-top: 25px;
     text-align: center;
     font-weight: bolder;
 
-}
- .contentm ul li:hover .turn-l{
+} */ 
+ /* .contentm ul li:hover .turn-l{
      background:#d9d9d9;
 
- }
+ } */
 
- .turn-r{
+ /* .turn-r{
      width: 20px;
      height: 48px;
      /*background: blue;*/
-     position: absolute;
+     /* position: absolute;
      right: 0;
      top:190px;
      line-height: 48px;
      color: #fff;
      text-align: center;
-     font-weight: bolder;
+     font-weight: bolder; */
 
 
- }
- .contentm.turn-r:hover{
+ 
+ /* .contentm.turn-r:hover{
      background: #8d8d8d;
 
- }
+ } */
 
- .contentm ul li:hover .turn-r{
+ /* .contentm ul li:hover .turn-r{
      background:#d9d9d9;
 
  }
  .contentm .turn-r:hover{
      background:#8d8d8d;
- }
+ } */
  .contentb{
      width: 76px;
      height: 10px;
